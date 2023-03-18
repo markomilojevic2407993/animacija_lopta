@@ -1,0 +1,76 @@
+.roditelj{
+    width: 800px;
+    height: 800px;
+    border-bottom: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.krug{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: rgb(228, 162, 39);
+    animation-name: animacija;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.more{
+    background: azure;
+    width: auto;
+    height: 300px;
+}
+
+@keyframes animacija{
+    0%{
+        bottom: 0px;
+        left: 0px;
+    }
+    10% {
+        bottom: 50px;
+        left: 100px;
+    }
+    20%{
+        bottom: 0px;
+        left: 150px;
+    }
+    30%{
+        bottom: 90px;
+        left: 200px;
+    }
+    40%{
+        bottom: 0px;
+        left: 250px;
+    }
+    50%{
+        bottom: 200px;
+        left: 300px;
+    }
+    60%{
+        bottom: 0px;
+        left: 350px;
+    }
+    70%{
+        bottom: 300px;
+        left: 400px;
+    }
+    80%{ bottom:0px;
+        left: 500px;
+    }
+    90%{
+        bottom: 350px;
+        left: 550px;
+    }
+    100%{
+        bottom: -250px;
+        left: 700px;
+    }
+
+}
